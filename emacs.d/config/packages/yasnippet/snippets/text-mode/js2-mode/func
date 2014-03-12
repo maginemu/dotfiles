@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+# name: func
+# --
+function $1($2) {
+    return ${3:this};
+}

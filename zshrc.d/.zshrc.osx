@@ -1,0 +1,26 @@
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:~/bin:~/local/bin:$PATH"
+export PATH="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources:$PATH"
+
+# android
+export ANDROID_HOME=/usr/local/android/adt-bundle-mac/sdk
+
+# android path
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:/usr/local/android-ndk:$PATH"
+
+# node
+source $(brew --prefix nvm)/nvm.sh
+npm_dir=${NVM_PATH}_modules
+export NODE_PATH=$NODE_PATH:$npm_dir
+NODE_MODULES=~/node_modules
+
+# node path
+PATH=${NODE_MODULES}/.bin:${NODE_MODULES}/node-inspector/bin:$PATH
+
+# java
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+
+# mac config
+defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true
+defaults write com.apple.screencapture name "SS_"

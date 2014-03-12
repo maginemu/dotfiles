@@ -1,0 +1,6 @@
+# name : def
+# --
+define([$1], function${3: }($2) {
+    'use strict';
+    $0
+});

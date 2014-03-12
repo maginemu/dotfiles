@@ -1,0 +1,4 @@
+#name : req
+# --
+var ${1:var} = require('${2:module}');
+$0

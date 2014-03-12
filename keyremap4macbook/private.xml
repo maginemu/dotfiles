@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+	<name>My US Layout</name>
+	<identifier>private.my_us_layout</identifier>
+	<autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::RETURN</autogen>
+	<autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::SHIFT_R</autogen>
+	<autogen>__KeyToKey__ KeyCode::SHIFT_R, KeyCode::BACKQUOTE</autogen>
+  </item>
+</root>

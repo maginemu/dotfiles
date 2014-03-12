@@ -1,0 +1,3 @@
+# name: label
+# -
+.tagadd('label', {${1:opts}}).text(${2:text}).gat()

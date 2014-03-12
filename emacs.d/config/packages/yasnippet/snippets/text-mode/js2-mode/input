@@ -1,0 +1,3 @@
+# name: input
+# -
+.tagadd('input', {type: 'text', id: '${2:id}', name: '${3:name}', value: '${3:value}'}).gat()

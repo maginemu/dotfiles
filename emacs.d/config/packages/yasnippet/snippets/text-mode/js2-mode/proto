@@ -1,0 +1,5 @@
+# name: exp
+# --
+${1:class}.prototype.${2:func} = function(${3:var}) {
+	$0
+};

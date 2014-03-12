@@ -1,0 +1,5 @@
+# name: forin
+# --
+for (var ${1:var} in ${2:Collection}) {
+	$0
+}

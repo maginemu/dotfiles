@@ -1,0 +1,9 @@
+# name: errors
+# --
+var errors = {
+    ${1:Exception}: {
+        name: '${2:name}',
+        message: '${3:message}'
+    }
+};
+$0

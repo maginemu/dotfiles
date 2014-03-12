@@ -1,0 +1,3 @@
+# name : gprov
+# --
+goog.provide('${1:class}');$0

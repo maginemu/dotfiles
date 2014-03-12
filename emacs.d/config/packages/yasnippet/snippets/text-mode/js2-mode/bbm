@@ -1,0 +1,7 @@
+# name : bbm
+# --
+var ${1:variable} = Backbone.Model.extend({
+    $0
+});
+
+return $1;

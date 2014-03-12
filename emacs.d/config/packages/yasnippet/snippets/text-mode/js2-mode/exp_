@@ -1,0 +1,4 @@
+# name: exp
+# --
+exports.${1:name} = ${2:function};
+$0

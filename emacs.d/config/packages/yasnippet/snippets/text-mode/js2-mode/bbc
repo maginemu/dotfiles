@@ -1,0 +1,7 @@
+# name : bbc
+# --
+var ${1:variable} = Backbone.Collection.extend({
+    $0
+});
+
+return $1;

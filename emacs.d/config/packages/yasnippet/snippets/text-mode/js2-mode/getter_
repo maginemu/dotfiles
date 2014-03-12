@@ -1,0 +1,5 @@
+# name: getter
+# --
+${1:class}.prototype.__defineGetter__('${2:func}', function(${3:var}) {
+	$0
+});

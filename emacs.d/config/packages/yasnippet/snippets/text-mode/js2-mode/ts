@@ -1,0 +1,3 @@
+# name: tagset
+" --
+tagset('${1:tag}', {${2:attribute}})

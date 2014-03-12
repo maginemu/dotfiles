@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+# name: func
+# --
+function ${1:name}(${2:var}) {
+	return $0;
+}

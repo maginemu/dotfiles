@@ -1,0 +1,3 @@
+# name: button
+# -
+.tagadd('button', {id: '${1:id}', name: '${2:name}', type: 'button'}).text(${3:text}).gat()

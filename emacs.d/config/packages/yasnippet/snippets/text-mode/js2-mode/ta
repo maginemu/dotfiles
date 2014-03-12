@@ -1,0 +1,3 @@
+# name: tagadd
+" --
+tagadd('${1:tag}', {${2:attribute}})

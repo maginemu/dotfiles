@@ -1,0 +1,5 @@
+#name : for ... 
+# --
+for (var i = 0; i < ${var}.length; i++) {
+    $0
+}

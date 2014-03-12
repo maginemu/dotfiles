@@ -1,0 +1,3 @@
+# name : greq
+# --
+goog.require('${1:class}');$0

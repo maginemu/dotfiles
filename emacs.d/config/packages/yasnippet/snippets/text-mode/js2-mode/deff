@@ -1,0 +1,6 @@
+# name : deff
+# --
+define(function(require, exports, module) {
+    'use strict';
+    $0
+});

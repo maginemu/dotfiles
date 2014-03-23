@@ -18,6 +18,8 @@ install tree
 install nvm
 install --cocoa emacs
 install git-now
+install docker
+install boot2docker
 
 # .dmg
 cask install iterm2

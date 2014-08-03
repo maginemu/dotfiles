@@ -17,6 +17,13 @@ NODE_MODULES=~/node_modules
 # node path
 PATH=${NODE_MODULES}/.bin:${NODE_MODULES}/node-inspector/bin:$PATH
 
+# for go lang
+if [ -x "`which go`" ]; then
+  export GOROOT=`go env GOROOT`
+  export GOPATH=$HOME/workspace/go
+  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
+
 # java
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 export JAVA_HOME=`/usr/libexec/java_home -v 1.6`

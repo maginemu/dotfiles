@@ -33,6 +33,7 @@ brew cask install dropbox
 brew cask install transmit
 brew cask install hipchat
 brew cask install evernote
+brew cask install atom
 
 # Remove outdated packages
 brew cleanup

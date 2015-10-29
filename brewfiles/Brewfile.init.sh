@@ -8,6 +8,7 @@ brew update
 brew tap homebrew/versions || true
 brew tap phinze/homebrew-cask || true
 brew tap homebrew/binary || true
+brew tap sanemat/font || true
 
 # Packages
 brew install zsh
@@ -34,6 +35,10 @@ brew cask install transmit
 brew cask install hipchat
 brew cask install evernote
 brew cask install atom
+rew cask install xquartz
+
+# requires xquartz
+brew install --powerline --vim-powerline ricty
 
 # Remove outdated packages
 brew cleanup

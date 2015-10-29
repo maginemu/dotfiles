@@ -40,3 +40,5 @@ defaults write com.apple.screencapture name "SS_"
 export SIM_LOG_DIR="~/Library/Logs/CoreSimulator"
 
 [ -f ~/.zshrc.d/.zshrc.work ] && source ~/.zshrc.d/.zshrc.work
+
+[ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql

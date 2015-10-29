@@ -35,7 +35,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # mac config
 defaults write com.apple.finder _FXShowPosixPathInTitle -boolean true
 defaults write com.apple.screencapture name "SS_"
-eval "$(rbenv init -)"
 
 # for ease of simulator log
 export SIM_LOG_DIR="~/Library/Logs/CoreSimulator"

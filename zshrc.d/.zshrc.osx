@@ -20,6 +20,11 @@ NODE_MODULES=~/node_modules
 # node path
 PATH=${NODE_MODULES}/.bin:${NODE_MODULES}/node-inspector/bin:$PATH
 
+# gvm
+if [ ! -f ${HOME}/.gvm/var/version ]; then
+   source "${HOME}/.gvm/bin/gvm-init.sh"
+fi
+
 # for go lang
 if [ -x "`which go`" ]; then
   export GOROOT=`go env GOROOT`

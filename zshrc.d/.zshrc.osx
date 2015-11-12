@@ -1,4 +1,3 @@
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/opt/local/bin:/opt/local/sbin:~/bin:~/local/bin:$PATH"
 export PATH="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources:$PATH"
 

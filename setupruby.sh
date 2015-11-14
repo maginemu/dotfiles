@@ -1,4 +1,4 @@
 brew install rbenv
-brwe install ruby-build
+brew install ruby-build
 
 rbenv install --list

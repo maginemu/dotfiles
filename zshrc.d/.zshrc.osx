@@ -78,5 +78,3 @@ zle -N peco-src
 bindkey '^]' peco-src
 
 [ -f ~/.zshrc.d/.zshrc.work ] && source ~/.zshrc.d/.zshrc.work
-
-[ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql

@@ -25,6 +25,9 @@ export PATH="$HOME/bin:$PATH"
 #
 [ -f ~/.zshrc.d/.zshrc.alias ] && source ~/.zshrc.d/.zshrc.alias
 
+# psql env
+[ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql
+
 case "${OSTYPE}" in
 # MacOSX
 darwin*)

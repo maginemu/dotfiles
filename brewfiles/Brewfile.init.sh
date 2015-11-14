@@ -27,6 +27,9 @@ brew install git-now
 # node
 brew install nodebrew
 
+# ruby
+brew install rbenv ruby-build
+
 brew install docker
 brew install boot2docker
 

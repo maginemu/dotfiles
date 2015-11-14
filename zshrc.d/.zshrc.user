@@ -28,6 +28,9 @@ export PATH="$HOME/bin:$PATH"
 # ruby (rbenv)
 [ -f ~/.zshrc.d/.zshrc.ruby ] && source ~/.zshrc.d/.zshrc.ruby
 
+# peco/ghq zsh commands
+[ -f ~/.zshrc.d/.zshrc.peco_ghq ] && source ~/.zshrc.d/.zshrc.peco_ghq
+
 # psql env
 [ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql
 

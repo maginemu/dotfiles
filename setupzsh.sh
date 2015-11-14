@@ -1,22 +1,21 @@
 #!/bin/bash
 
+set -u
+
 # this directory
-script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
+readonly script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
+readonly USR_LOCAL_ZSH_PATH="/usr/local/bin/zsh"
 
-# install oh-my-zsh
-#curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh || 0
+# add to standard shells
+if grep -Fxq $USR_LOCAL_ZSH_PATH /etc/shells; then
+    :
+else
+    echo "Adding ${USR_LOCAL_ZSH_PATH} into /etc/shells ..."
+    echo $USR_LOCAL_ZSH_PATH | sudo tee -a /etc/shells
+fi
 
-# remove once
-#mv ~/.zshrc ~/.zshrc.oh-my-zsh.bak
+# change login shell
+chsh -s $USR_LOCAL_ZSH_PATH
 
-# symlink zshrc
-#ln -sf $script_dir/zshrc.d ~/.zshrc.d
-#ln -sf $script_dir/.zshrc ~/.zshrc
-
-ln -sf $script_dir/zprezto ~/.zprezto
-ln -sf $script_dir/.zshrc ~/.zshrc
-
-
-# symlink bash_profile, bashrc
-ln -sf $script_dir/.bash_profile ~/.bash_profile
-ln -sf $script_dir/.bashrc ~/.bashrc
+# exec on zsh
+$USR_LOCAL_ZSH_PATH setupprezto.sh

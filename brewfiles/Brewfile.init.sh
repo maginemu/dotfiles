@@ -38,6 +38,9 @@ brew install --with-cocoa emacs
 brew install cmigemo
 brew install doxymacs
 
+# servers
+brew install redis
+
 # .dmg
 brew cask install iterm2
 brew cask install virtualbox # may needs password

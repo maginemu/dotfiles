@@ -21,7 +21,7 @@ NODE_MODULES=~/node_modules
 PATH=${NODE_MODULES}/.bin:${NODE_MODULES}/node-inspector/bin:$PATH
 
 # gvm
-if [ ! -f ${HOME}/.gvm/var/version ]; then
+if [[ -f "${HOME}/.gvm/bin/gvm-init.sh" && ! -f ${HOME}/.gvm/var/version ]]; then
    source "${HOME}/.gvm/bin/gvm-init.sh"
 fi
 

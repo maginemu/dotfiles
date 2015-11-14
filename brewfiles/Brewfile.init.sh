@@ -1,4 +1,6 @@
-#!/bin/sh# Make sure using latest Homebrew
+#!/bin/bash
+
+# Make sure using latest Homebrew
 brew update
 
 # Update already-installed formula (takes too much time, I will do it manually later)
@@ -10,32 +12,39 @@ brew tap phinze/homebrew-cask || true
 brew tap homebrew/binary || true
 brew tap sanemat/font || true
 
+#
 # Packages
+#
 brew install zsh
 brew install git
 brew install wget
+brew install httpie
 brew install tree
-brew install nvm
-brew install --cocoa emacs
+brew install ag
+brew install peco
 brew install git-now
+
+# node
+brew install nodebrew
+
 brew install docker
 brew install boot2docker
+
+# emacs
+brew install --with-cocoa emacs
+brew install cmigemo
+brew install doxymacs
 
 # .dmg
 brew cask install iterm2
 brew cask install virtualbox # may needs password
 brew cask install vagrant
-brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install karabiner
-brew cask install kobito
-brew cask install skype
 brew cask install dropbox
 brew cask install transmit
-brew cask install hipchat
-brew cask install evernote
 brew cask install atom
-rew cask install xquartz
+brew cask install xquartz
 
 # requires xquartz
 brew install --powerline --vim-powerline ricty

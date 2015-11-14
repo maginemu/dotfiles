@@ -25,6 +25,9 @@ export PATH="$HOME/bin:$PATH"
 #
 [ -f ~/.zshrc.d/.zshrc.alias ] && source ~/.zshrc.d/.zshrc.alias
 
+# ruby (rbenv)
+[ -f ~/.zshrc.d/.zshrc.ruby ] && source ~/.zshrc.d/.zshrc.ruby
+
 # psql env
 [ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql
 
@@ -43,6 +46,3 @@ esac
 # terminal
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

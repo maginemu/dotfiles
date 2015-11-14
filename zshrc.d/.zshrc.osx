@@ -17,6 +17,11 @@ npm_dir=${NVM_PATH}_modules
 export NODE_PATH=$NODE_PATH:$npm_dir
 NODE_MODULES=~/node_modules
 
+# nodebrew
+if [[ -d $HOME/.nodebrew ]]; then
+   export PATH=$HOME/.nodebrew/current/bin:$PATH
+fi
+
 # node path
 PATH=${NODE_MODULES}/.bin:${NODE_MODULES}/node-inspector/bin:$PATH
 

@@ -25,6 +25,8 @@ brew install peco
 brew install git-now
 brew install coreutils # gls etc
 
+# python
+brew install python
 
 # node
 brew install nodebrew

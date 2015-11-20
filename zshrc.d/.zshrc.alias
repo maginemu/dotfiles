@@ -1,8 +1,18 @@
 
 # ls
-alias la="ls -a"
-alias lf="ls -F"
-alias ll="ls -l"
+case "${OSTYPE}" in
+  darwin*)
+    alias ls='gls --color'
+    alias lf="gls -F --color"
+    alias ll='gls -l --color'
+    alias la='gls -la --color'
+    ;;
+  linux*)
+    alias lf="ls -F"
+    alias ll="ls -l"
+    alias la="ls -la"
+    ;;
+esac
 
 # process
 alias 'ps?'='pgrep -l -f'

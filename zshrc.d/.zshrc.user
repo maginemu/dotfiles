@@ -34,6 +34,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # psql env
 [ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql
 
+# dircolor solarized
+[ -f ~/.zshrc.d/.zshrc.solarized ] && source ~/.zshrc.d/.zshrc.solarized
+
 #``# alias設定
 #
 [ -f ~/.zshrc.d/.zshrc.alias ] && source ~/.zshrc.d/.zshrc.alias

@@ -1,0 +1,9 @@
+_repo_name="dircolors-solarized"
+_repo_path="$(ghq list | grep ${_repo_name})"
+if [ -z ${_repo_path} ]; then
+   ghq get git@github.com:seebi/${_repo_name}.git
+fi
+
+_repo="$(ghq root)/${_repo_path}"
+
+eval $(gdircolors ${_repo}/dircolors.ansi-universal)

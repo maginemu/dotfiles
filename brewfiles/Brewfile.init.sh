@@ -23,6 +23,8 @@ brew install tree
 brew install ag
 brew install peco
 brew install git-now
+brew install coreutils # gls etc
+
 
 # node
 brew install nodebrew

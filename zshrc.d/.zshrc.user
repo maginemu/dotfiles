@@ -1,10 +1,11 @@
 export EDITOR=vim
-
-
-
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
+
+# terminal (default setting)
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -21,9 +22,6 @@ export PATH="$HOME/bin:$PATH"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-#``# alias設定
-#
-[ -f ~/.zshrc.d/.zshrc.alias ] && source ~/.zshrc.d/.zshrc.alias
 # go
 [ -f ~/.zshrc.d/.zshrc.go ] && source ~/.zshrc.d/.zshrc.go
 
@@ -36,6 +34,10 @@ export PATH="$HOME/bin:$PATH"
 # psql env
 [ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql
 
+#``# alias設定
+#
+[ -f ~/.zshrc.d/.zshrc.alias ] && source ~/.zshrc.d/.zshrc.alias
+
 case "${OSTYPE}" in
 # MacOSX
 darwin*)
@@ -46,8 +48,3 @@ linux*)
     [ -f ~/.zshrc.d/.zshrc.linux ] && source ~/.zshrc.d/.zshrc.linux
     ;;
 esac
-
-
-# terminal
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced

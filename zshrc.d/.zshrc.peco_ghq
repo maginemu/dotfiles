@@ -1,19 +1,6 @@
-if [ -x "`which ghq`" ] && [ -x "`which peco`" ]; then
+if [ -x "`which peco`" ]; then
 
-	function peco-src () {
-		local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
-		if [ -n "$selected_dir" ]; then
-			BUFFER="cd ${selected_dir}"
-			zle accept-line
-		fi
-		zle clear-screen
-	}
-	zle -N peco-src
-	bindkey '^]' peco-src
-
-
-	setopt hist_ignore_all_dups
-
+setopt hist_ignore_all_dups
 	function peco_select_history() {
 		local tac
 		if which tac > /dev/null; then
@@ -27,4 +14,17 @@ if [ -x "`which ghq`" ] && [ -x "`which peco`" ]; then
 	}
 	zle -N peco_select_history
 	bindkey '^r' peco_select_history
+
+	if [ -x "`which ghq`" ]; then
+	  function peco-src () {
+		local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+		if [ -n "$selected_dir" ]; then
+		  BUFFER="cd ${selected_dir}"
+		  zle accept-line
+		fi
+		zle clear-screen
+	  }
+	  zle -N peco-src
+	  bindkey '^]' peco-src
+	fi
 fi

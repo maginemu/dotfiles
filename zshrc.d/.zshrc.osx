@@ -30,13 +30,6 @@ if [[ -f "${HOME}/.gvm/bin/gvm-init.sh" && ! -f ${HOME}/.gvm/var/version ]]; the
    source "${HOME}/.gvm/bin/gvm-init.sh"
 fi
 
-# for go lang
-if [ -x "`which go`" ]; then
-  export GOROOT=`go env GOROOT`
-  export GOPATH=$HOME/.go
-  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-fi
-
 # java
 export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`

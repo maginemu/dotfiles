@@ -24,6 +24,8 @@ export PATH="$HOME/bin:$PATH"
 #``# alias設定
 #
 [ -f ~/.zshrc.d/.zshrc.alias ] && source ~/.zshrc.d/.zshrc.alias
+# go
+[ -f ~/.zshrc.d/.zshrc.go ] && source ~/.zshrc.d/.zshrc.go
 
 # ruby (rbenv)
 [ -f ~/.zshrc.d/.zshrc.ruby ] && source ~/.zshrc.d/.zshrc.ruby

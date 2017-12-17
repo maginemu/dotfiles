@@ -34,6 +34,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # psql env
 [ -f ~/.zshrc.d/.zshrc.psql ] && source ~/.zshrc.d/.zshrc.psql
 
+# pyenv
+[ -f ~/.zshrc.d/.zshrc.python ] && source ~/.zshrc.d/.zshrc.python
+
 # dircolor solarized
 [ -f ~/.zshrc.d/.zshrc.solarized ] && source ~/.zshrc.d/.zshrc.solarized
 

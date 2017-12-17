@@ -28,6 +28,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # ruby (rbenv)
 [ -f ~/.zshrc.d/.zshrc.ruby ] && source ~/.zshrc.d/.zshrc.ruby
 
+# rust
+[ -f ~/.zshrc.d/.zshrc.rust ] && source ~/.zshrc.d/.zshrc.rust
+
 # peco/ghq zsh commands
 [ -f ~/.zshrc.d/.zshrc.peco_ghq ] && source ~/.zshrc.d/.zshrc.peco_ghq
 

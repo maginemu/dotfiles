@@ -37,6 +37,8 @@ brew install rbenv ruby-build
 brew install docker
 brew install boot2docker
 
+brew install multimarkdown
+
 # emacs
 brew install --with-cocoa emacs
 brew install cmigemo
